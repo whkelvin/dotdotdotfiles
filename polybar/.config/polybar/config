@@ -47,8 +47,8 @@ nord13 = #ebcb8b
 nord14 = #a3be8c
 nord15 = #b48ead
 
-[bar/bottom]
-monitor = HDMI2
+[bar/bottom1]
+monitor = DP2
 monitor-strict=false
 background = ${colors.nord2}
 foreground = ${colors.nord6}
@@ -56,6 +56,7 @@ width = 100%
 height = 33
 fixed-center = true
 modules-center = i3
+
 modules-right = powerline-left-cpu space-cpu cpu space-cpu powerline-left-memory space-memory memory space-memory powerline-left-date space-date date space-date
 font-0 = "DejaVu Sans Mono for Powerline:style=Bold:size=11;2"
 font-1 = "Ubuntu Mono derivative Powerline:style=Bold:size=11;2"
@@ -70,6 +71,29 @@ module-margin = 0
 padding-right = 0
 padding-left = 0
 
+[bar/bottom2]
+monitor = eDP1
+monitor-strict=false
+background = ${colors.nord2}
+foreground = ${colors.nord6}
+width = 100%
+height = 33
+fixed-center = true
+modules-center = i3
+
+modules-right = powerline-left-cpu space-cpu cpu space-cpu powerline-left-memory space-memory memory space-memory powerline-left-date space-date date space-date
+font-0 = "DejaVu Sans Mono for Powerline:style=Bold:size=11;2"
+font-1 = "Ubuntu Mono derivative Powerline:style=Bold:size=11;2"
+font-2 = "Roboto Mono for Powerline:style=Bold:size=10;2"
+font-3 = "Noto Sans TC:style=Bold:size=13;2"
+font-4 = "Ubuntu:style=Bold:size=11;2"
+font-5 = "DejaVu Sans Mono for Powerline:style=Bold:pixelsize=27;6"
+
+line-size = 2
+bottom = true
+module-margin = 0
+padding-right = 0
+padding-left = 0
 
 [module/date]
 type = internal/date
