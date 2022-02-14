@@ -88,6 +88,18 @@ confirm
 pacman -S stow
 
 echo "=================="
+echo "feh"
+echo "=================="
+confirm
+pacman -S feh
+
+echo "=================="
+echo "xclip"
+echo "=================="
+confirm
+pacman -S xclip
+
+echo "=================="
 echo "INSTALLING GIT and base-devel"
 echo "=================="
 confirm
