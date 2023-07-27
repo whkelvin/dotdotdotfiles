@@ -88,4 +88,3 @@ use_terminal_colors
 configure_goldfish
 
 
-
