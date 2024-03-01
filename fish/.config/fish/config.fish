@@ -87,4 +87,8 @@ end
 use_terminal_colors
 configure_goldfish
 
+set -U GDK_BACKEND wayland,x11
+set -U QT_QPA_PLATFORM "wayland;xcb"
 
+direnv hook fish | source
+zoxide init fish | source

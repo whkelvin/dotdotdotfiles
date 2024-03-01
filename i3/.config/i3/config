@@ -45,13 +45,11 @@ exec_always --no-startup-id polybar bottom2
 exec_always feh --bg-fill ~/.wallpaper/star_colored_ultrawide.png
 
 #Restart pulseaudio daemon
-exec_always pulseaudio -D
+#exec_always pulseaudio -D
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
-
-exec picom -b
 
 exec ibus-daemon -drxR
 
@@ -70,7 +68,7 @@ bindsym --release $mod+p exec escrotum -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkd
 
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 bindsym $mod+b exec brave-browser
 
